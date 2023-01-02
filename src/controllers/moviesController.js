@@ -21,6 +21,7 @@ module.exports = {
     },
     new : (req,res) => {
         db.Movie.findAll({
+            
             order : [
                 ["release_date","DESC"]
             ]
